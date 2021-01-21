@@ -15,7 +15,7 @@ class Soldier:
 
     def get_weapon(self):
         arr_weapon = []
-        number_weapon = random.randint(2, 2)
+        number_weapon = random.randint(0, 2)
         for i in range(0, number_weapon):
             effect = {
                 0: [],
