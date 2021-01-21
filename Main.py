@@ -2,9 +2,10 @@ from Warrior import Warrior
 import random
 
 if __name__ == "__main__":
-    unit1 = Warrior('Unit1', 20, 100)
-    unit2 = Warrior('Unit2', 20, 100)
-    unit3 = Warrior('Unit3', 20, 100)
+    unit1 = Warrior('Unit1')
+    unit2 = Warrior('Unit2')
+    unit3 = Warrior('Unit3')
+    print()
     unit_list = [unit1, unit2, unit3]
 
     while True:
@@ -17,6 +18,6 @@ if __name__ == "__main__":
                     item.__del__()
                     unit_list.remove(item)
         if len(unit_list) == 1:
-            print(unit_list[0].name, 'is winner!')
-            print(unit_list[0])
+            print(unit_list[0].name, 'is winner! \n')
+            print(unit_list[0], '\n')
             break
